@@ -1,5 +1,5 @@
 const leapYears = function (year) {
-  let bool = false;
+  /*let bool = false;
   if (year % 4 === 0) {
     bool = true;
     if (year % 100 == 0) {
@@ -9,7 +9,8 @@ const leapYears = function (year) {
       }
     }
   }
-  return bool;
+  return bool;*/
+  return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
 };
 
 // Do not edit below this line
